@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ titulo }} - My Website{% endblock %}
+{% block content %}
+    <section class="welcome">
+        <h2>{{ titulo }}</h2>
+        <p class="lead">{{ descripcion }}</p>
+        <div class="info-box">
+            <h3>📄 Content</h3>
+            <p>{{ content }}</p>
+        </div>
+        <div class="info-box">
+            <h3>💡 What can you do here?</h3>
+            <ul>
+                <li>✅ Customize the content</li>
+                <li>✅ Add images</li>
+                <li>✅ Create forms</li>
+                <li>✅ Connect to database</li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}

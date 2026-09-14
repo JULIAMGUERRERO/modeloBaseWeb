@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Website{% endblock %}
+
+{% block content %}
+    <section class="welcome">
+        <h2>{{ titulo }}</h2>
+        <p class="lead">{{ mensaje }}</p>
+        
+        <div class="info-box">
+            <h3>What is this?</h3>
+            <p>You have successfully created a web page with:</p>
+            <ul>
+                <li>✅ <strong>Django</strong> - Professional web framework</li>
+                <li>✅ <strong>Docker</strong> - Containers for portability</li>
+                <li>✅ <strong>HTML/CSS</strong> - Design and styles</li>
+                <li>✅ <strong>Reusable components</strong> - Header and Footer</li>
+            </ul>
+        </div>
+
+        <div class="next-steps">
+            <h3>Next steps:</h3>
+            <ol>
+                <li>Customize the content of this page</li>
+                <li>Add more pages to your site</li>
+                <li>Create database models</li>
+                <li>Let it fly on the internet! 🚀</li>
+            </ol>
+        </div>
+    </section>
+{% endblock %}

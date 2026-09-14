@@ -1,4 +1,4 @@
-/* ==================== RESET Y GENERALES ==================== */
+/* ==================== RESET AND GENERAL ==================== */
 * {
     margin: 0;
     padding: 0;
@@ -104,7 +104,7 @@ body {
     width: 100%;
 }
 
-/* ==================== HAMBURGUESA ==================== */
+/* ==================== HAMBURGER ==================== */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -280,7 +280,7 @@ main {
     }
 }
 
-/* ==================== RESPONSIVE - MÓVILES PEQUEÑOS (480px) ==================== */
+/* ==================== RESPONSIVE - SMALL MOBILE DEVICES (480px) ==================== */
 @media (max-width: 480px) {
     body {
         font-size: 14px;

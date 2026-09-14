@@ -1,16 +1,16 @@
-// Script del menú hamburguesa
+// Hamburger menu script
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    // Abrir/cerrar menú al hacer click en hamburguesa
+    // Open/close menu when clicking hamburger
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navbar.classList.toggle('active');
     });
     
-    // Cerrar menú cuando se hace click en un enlace
+    // Close menu when clicking a link
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             hamburger.classList.remove('active');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Cerrar menú si se redimensiona (pasar de móvil a desktop)
+    // Close menu when resizing (switching from mobile to desktop)
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
             hamburger.classList.remove('active');

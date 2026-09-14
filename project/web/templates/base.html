@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Mi Sitio Web{% endblock %}</title>
+    <title>{% block title %}My Website{% endblock %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <!-- Incluir el componente header -->
+    <!-- Include header component -->
     {% include "includes/header.html" %}
 
-    <!-- Contenido específico de cada página -->
+    <!-- Page-specific content -->
     <main class="container">
         {% block content %}
-        <!-- Aquí va el contenido específico de cada página -->
+        <!-- Page-specific content goes here -->
         {% endblock %}
     </main>
 
-    <!-- Incluir el componente footer -->
+    <!-- Include footer component -->
     {% include "includes/footer.html" %}
     
-    <!-- Script del menú hamburguesa -->
+    <!-- Hamburger menu script -->
     {% load static %}
     <script src="{% static 'js/menu.js' %}"></script>
 </body>

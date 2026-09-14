@@ -1,0 +1,33 @@
+<!-- Header Component - Navigation header component -->
+<header class="header">
+    <!-- Title and subtitle section (centered) -->
+    <div class="header-intro">
+        <div class="container">
+            <h1>🚀 My Website</h1>
+            <p class="subtitle">Created with Django and Docker</p>
+        </div>
+    </div>
+    
+    <!-- Navigation section -->
+    <div class="header-navbar">
+        <div class="container navbar-container">
+            <!-- Hamburger menu (visible on mobile only) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation menu -->
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li><a href="{% url 'home' %}" class="nav-link">HOME</a></li>
+                    <li><a href="{% url 'template1' %}" class="nav-link">TEMPLATE 1</a></li>
+                    <li><a href="{% url 'template2' %}" class="nav-link">TEMPLATE 2</a></li>
+                    <li><a href="{% url 'template3' %}" class="nav-link">TEMPLATE 3</a></li>
+                    <li><a href="{% url 'template4' %}" class="nav-link">TEMPLATE 4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

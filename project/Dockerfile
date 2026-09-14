@@ -1,10 +1,10 @@
 ﻿FROM python:3.11-slim
 
-# Evita bytecode y fuerza salida de logs en tiempo real
+# Avoid bytecode and force real-time log output
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
-# Herramientas de compilación para librerías que las necesitan
+# Compilation tools for libraries that need them
 RUN apt-get update \
     && apt-get install -y --no-install-recommends gcc build-essential \
     && rm -rf /var/lib/apt/lists/*
