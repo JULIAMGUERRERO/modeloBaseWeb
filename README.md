@@ -1,4 +1,10 @@
-# 🌐 modeloBaseWeb
+🌐 **ELIGE TU IDIOMA / CHOOSE YOUR LANGUAGE**
+
+🇪🇸 **[ESPAÑOL](#-modelobaseweb-es)** | 🇬🇧 **[ENGLISH](#-modelobaseweb-en)**
+
+---
+
+# 🌐 modeloBaseWeb (ES)
 
 ### Plantilla Profesional de Sitio Web con Django + Docker
 
@@ -192,3 +198,202 @@ Este proyecto se distribuye bajo la licencia **MIT**. Eres libre de usar, modifi
 Hecho por [Juliam Guerrero Diaz](https://github.com/JULIAMGUERRERO)
 
 ⭐ **Si este proyecto te es útil, ayuda a otros dejando una estrella en GitHub** ⭐
+
+---
+
+---
+
+# 🌐 modeloBaseWeb (EN)
+
+### Professional Website Template with Django + Docker
+
+> **A solid starting point for building modern, scalable, and professional web applications. With two paths: learn from scratch or use the ready-made template.**
+
+[![Django](https://img.shields.io/badge/Django-4.2+-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
+[![Docker](https://img.shields.io/badge/Docker-Latest-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+---
+
+## What is modeloBaseWeb?
+
+`modeloBaseWeb` is a **professional and scalable template** for creating functional websites using **Django** (Python framework) and **Docker** (containers).
+
+**Perfect for:**
+- ✅ Learning Django's professional architecture from scratch
+- ✅ Using a production-ready template
+- ✅ Teams that need to standardize projects
+- ✅ Applications that require Docker from the start
+
+---
+
+## TWO PATHS - Choose yours
+
+### Path 1: **LEARN FROM SCRATCH** 
+**For developers who want to understand the architecture**
+
+```
+    BRANCH: main
+📄  FILE: GUIA.MD
+⏱️  TIME: 2-3 hours (complete)
+📚  LEVEL: Beginner → Intermediate
+```
+
+**What does it include?**
+- 3 complete phases step by step
+- Explanation of each command
+- Professional structure from scratch
+- Docker best practices
+
+**For whom?**
+- I want to understand how Django + Docker works
+- I need to learn the architecture
+- I prefer to build from the foundations
+
+ > [!NOTE] 
+ > If you choose LEARN FROM SCRATCH **👉 [Open GUIDE.MD →](./GUIDE.MD)**; follow the 3 steps (PHASE 1, 2, 3), learn each concept and build your first website
+
+---
+
+### Path 2: **USE READY TEMPLATE**
+**For developers who need a functional project instantly**
+
+| Language | Branch | Command |
+|----------|--------|---------|
+| **Spanish** | `template-es` | `git clone --branch template-es <repo-url>` |
+| **English** | `template-en` | `git clone --branch template-en <repo-url>` |
+
+**What does it include?**
+- Completely configured project
+- Professional Docker Compose
+- Database ready
+- Functional admin panel
+- Everything ready to customize
+
+**For whom?**
+- I need a functional project in 5 minutes
+- I already know Django and Docker
+
+---
+
+## 📊 Comparison: Learn vs Template
+
+| Aspect | 🎓 Learn | 🚀 Template |
+|--------|---------|-----------|
+| **Setup time** | 2-3 hours | 5 minutes |
+| **Understand architecture?** | ✅ YES (complete) | ⚠️ Basically |
+| **Functional project?** | ✅ YES (at the end) | ✅ YES (immediate) |
+| **Ideal for...** | Learning | Production |
+| **Difficulty** | Step by step | Plug & play |
+| **Customization** | From scratch | Modify as needed |
+| **Branch** | `main` | `template-es` / `template-en` |
+
+---
+## Prerequisites
+
+Both paths need:
+
+- **Docker Desktop** — [Download](https://www.docker.com/products/docker-desktop)
+- **Visual Studio Code** — [Download](https://code.visualstudio.com/download)
+- **Git** — [Download](https://git-scm.com/)
+
+---
+
+## 📁 Branch Structure
+
+```
+main (YOU ARE HERE)
+├─ 📄 README.md (this file)
+├─ 📚 GUIA.MD (tutorial completo en ESPAÑOL)
+├─ 📚 GUIDE.MD (complete tutorial in ENGLISH)
+│
+└─ Branches:
+    ├─ template-es (Django + Docker ready in SPANISH)
+    └─ template-en (Django + Docker ready in ENGLISH)
+```
+---
+
+
+## FAQ - Frequently Asked Questions ❓ 
+
+**Q: Do I need previous experience with Django or Docker?**
+> A: No, the GUIDE teaches you from scratch. Both paths are designed for beginners.
+
+**Q: What's the difference between the branches?**
+> A: The `main` branch has the learning guide. The `template-es` and `template-en` branches are completely functional projects ready to use.
+
+**Q: Can I use this in production?**
+> A: Yes, Docker Compose is configured professionally. The template branches include best practices.
+
+**Q: What language does each branch have?**
+> A: `template-es` → Spanish | `template-en` → English. The guide GUIA.MD is in Spanish, GUIDE.MD is in English.
+
+**Q: Where can I see my website?**
+> A: At `http://localhost:8000`
+
+**Q: How do I access the admin panel?**
+> A: `http://localhost:8000/admin` (with superuser credentials you created)
+
+**Q: Can I switch from Django to another framework?**
+> A: This template is optimized for Django, but the Docker structure is reusable.
+
+**Q: How do I add new pages?**
+> A: In the GUIDE (PHASE 2) you'll learn to create apps and templates. In template: copy the existing structure.
+
+**Q: Does Docker consume many resources?**
+> A: No, Docker is efficient. Python 3.11-slim images are small (~150MB).
+
+---
+
+## 📚 Where do I start?
+
+### If YOU ARE A BEGINNER:
+```
+1. Verify Docker is installed → docker --version
+2. Open GUIDE.MD in this branch
+3. Follow step by step
+4. Learn the complete architecture
+```
+
+### If YOU HAVE EXPERIENCE:
+```
+1. Fork template-es or template-en
+2. docker-compose up
+3. Customize as needed
+4. Deploy to production
+```
+
+---
+
+## 🤝 Contributions
+
+Do you have improvements or suggestions?
+
+- 🐛 **Report bugs** — [Issues](https://github.com/JULIAMGUERRERO/modeloBaseWeb/issues)
+- 💡 **Suggest improvements** — [Discussions](https://github.com/JULIAMGUERRERO/modeloBaseWeb/discussions)
+- 🔀 **Make pull requests** — Your contributions are welcome
+
+---
+
+## 📄 License
+
+This project is distributed under the **MIT** license. You are free to use, modify and distribute the code.
+
+---
+
+## 💬 Connect With Me
+
+**Questions or suggestions?**
+
+💼 **LinkedIn:** [Juliam Guerrero Diaz](https://www.linkedin.com/in/juliamguerrero/)  
+📧 **Email:** [juliamdario.g@deusto.es](mailto:juliamdario.g@deusto.es)  
+🐙 **GitHub:** [@JULIAMGUERRERO](https://github.com/JULIAMGUERRERO)
+
+---
+
+### "Clean architecture is the foundation of software success..."
+
+Made by [Juliam Guerrero Diaz](https://github.com/JULIAMGUERRERO)
+
+⭐ **If this project is useful to you, help others by leaving a star on GitHub** ⭐
