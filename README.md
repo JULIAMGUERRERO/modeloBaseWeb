@@ -294,7 +294,6 @@ Una vez tengas el proyecto corriendo:
 **¡Te invito a colaborar!**
 
 - 🐛 **Reportar bugs** — [Issues](https://github.com/JULIAMGUERRERO/modeloBaseWeb/issues)
-- 💡 **Sugerir mejoras** — [Discussions](https://github.com/JULIAMGUERRERO/modeloBaseWeb/discussions)
 - 🔀 **Hacer pull requests** — Tus contribuciones son bienvenidas
 
 ---
@@ -306,11 +305,6 @@ Este proyecto se distribuye bajo la licencia **MIT**. Eres libre de usar, modifi
 Consulta [LICENSE](./LICENSE) para más detalles.
 
 ---
-
-### «La arquitectura limpia es el cimiento del éxito en software.»
-
-Hecho por [Juliam Guerrero Diaz](https://github.com/JULIAMGUERRERO)
-
 ⭐ **Si este proyecto te es útil, ayuda a otros dejando una estrella en GitHub** ⭐
 
 ---
