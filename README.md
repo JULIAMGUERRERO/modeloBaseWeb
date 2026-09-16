@@ -171,7 +171,6 @@ main (ESTÁS AQUÍ)
 ¿Tienes mejoras o sugerencias?
 
 - 🐛 **Reportar bugs** — [Issues](https://github.com/JULIAMGUERRERO/modeloBaseWeb/issues)
-- 💡 **Sugerir mejoras** — [Discussions](https://github.com/JULIAMGUERRERO/modeloBaseWeb/discussions)
 - 🔀 **Hacer pull requests** — Tus contribuciones son bienvenidas
 
 ---
@@ -193,13 +192,7 @@ Este proyecto se distribuye bajo la licencia **MIT**. Eres libre de usar, modifi
 
 ---
 
-### "La arquitectura limpia es el cimiento del éxito..."
-
-Hecho por [Juliam Guerrero Diaz](https://github.com/JULIAMGUERRERO)
-
 ⭐ **Si este proyecto te es útil, ayuda a otros dejando una estrella en GitHub** ⭐
-
----
 
 ---
 
@@ -371,7 +364,6 @@ main (YOU ARE HERE)
 Do you have improvements or suggestions?
 
 - 🐛 **Report bugs** — [Issues](https://github.com/JULIAMGUERRERO/modeloBaseWeb/issues)
-- 💡 **Suggest improvements** — [Discussions](https://github.com/JULIAMGUERRERO/modeloBaseWeb/discussions)
 - 🔀 **Make pull requests** — Your contributions are welcome
 
 ---
@@ -391,9 +383,5 @@ This project is distributed under the **MIT** license. You are free to use, modi
 🐙 **GitHub:** [@JULIAMGUERRERO](https://github.com/JULIAMGUERRERO)
 
 ---
-
-### "Clean architecture is the foundation of software success..."
-
-Made by [Juliam Guerrero Diaz](https://github.com/JULIAMGUERRERO)
 
 ⭐ **If this project is useful to you, help others by leaving a star on GitHub** ⭐
