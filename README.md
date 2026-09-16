@@ -294,7 +294,6 @@ Do you have improvements or suggestions for the template?
 **I invite you to collaborate!**
 
 - 🐛 **Report bugs** — [Issues](https://github.com/JULIAMGUERRERO/modeloBaseWeb/issues)
-- 💡 **Suggest improvements** — [Discussions](https://github.com/JULIAMGUERRERO/modeloBaseWeb/discussions)
 - 🔀 **Make pull requests** — Your contributions are welcome
 
 ---
@@ -307,13 +306,9 @@ Check [LICENSE](./LICENSE) for more details.
 
 ---
 
-### "Clean architecture is the foundation of software success."
-
-Made by [Juliam Guerrero Diaz](https://github.com/JULIAMGUERRERO)
 
 ⭐ **If this project is useful to you, help others by leaving a star on GitHub** ⭐
 
----
 ## 💬 Connect With Me
 
 Questions, suggestions, or simply want to share how you use this template?
