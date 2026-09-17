@@ -170,7 +170,7 @@ main (ESTÁS AQUÍ)
 
 ¿Tienes mejoras o sugerencias?
 
-- 🐛 **Reportar bugs** — [Issues](https://github.com/evidadeusto/modeloBaseWeb/issues)
+- 🐛 **Reportar bugs** — [Issues](https://github.com/JULIAMGUERRERO/modeloBaseWeb/issues)
 - 🔀 **Hacer pull requests** — Tus contribuciones son bienvenidas
 
 ---
@@ -188,7 +188,7 @@ Este proyecto se distribuye bajo la licencia **MIT**. Eres libre de usar, modifi
 
 💼 **LinkedIn:** [Juliam Guerrero Diaz](https://www.linkedin.com/in/juliamguerrero/)  
 📧 **Email:** [juliamdario.g@deusto.es](mailto:juliamdario.g@deusto.es)  
-🐙 **GitHub:** [@evidadeusto](https://github.com/evidadeusto)
+🐙 **GitHub:** [@JULIAMGUERRERO](https://github.com/JULIAMGUERRERO)
 
 ---
 
