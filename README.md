@@ -302,8 +302,6 @@ Una vez tengas el proyecto corriendo:
 
 Este proyecto se distribuye bajo la licencia **MIT**. Eres libre de usar, modificar y distribuir el código, siempre que mantengas la mención de la licencia original.
 
-Consulta [LICENSE](./LICENSE) para más detalles.
-
 ---
 ⭐ **Si este proyecto te es útil, ayuda a otros dejando una estrella en GitHub** ⭐
 
