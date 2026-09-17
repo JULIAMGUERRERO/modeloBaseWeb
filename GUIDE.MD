@@ -20,13 +20,15 @@ Before you start, make sure you have:
 - **[Visual Studio Code installed](https://code.visualstudio.com/download)** (code editor)
 
 
-### 📑 Quick Index
-- [PHASE 1: Basic Structure](#-phase-1-de-3-basic-project-structure)
-- [PHASE 2: Functional Web Page](#-phase-2-de-3-create-your-functional-web-page)
-- [PHASE 3: Professional Docker-Compose](#-phase-3-de-3-docker-compose-for-complete-professional-systems)
-- [Glossary](#-complete-glossary---key-terms) 
+### 📑 Quick Index - Navigate All Phases
+- [PHASE 1: Basic Project Structure](#phase-1-of-3-basic-project-structure)
+- [PHASE 2: Functional Web Page](#phase-2-of-3-create-your-functional-web-page)
+- [PHASE 3: Docker-Compose](#phase-3-of-3-docker-compose-for-complete-professional-systems)
+- [Glossary: Key Terms](#complete-glossary---key-terms) 
 
 ---
+
+## PHASE 1 OF 3: Basic Project Structure
 
 # 📁 PHASE 1 OF 3: Basic Project Structure
 
@@ -521,6 +523,8 @@ project/
 
 ---
 
+## PHASE 2 OF 3: Create Your Functional Web Page
+
 # 📁 PHASE 2 OF 3: Create Your Functional Web Page
 
 > **In this phase:** We will build your first **completely functional** website with navbar, multiple pages and professional styles.
@@ -835,44 +839,44 @@ from django.shortcuts import render
 def home(request):
     """Home page view"""
     context = {
-        'titulo': '¡Welcome to your website!',
-        'mensaje': 'This is your first page created with Django and Docker',
+        'title': 'Welcome to your website!',
+        'message': 'This is your first page created with Django and Docker',
     }
     return render(request, 'home.html', context)
 
 def template1(request):
     """Template 1 view"""
     context = {
-        'titulo': 'Template 1',
-        'descripcion': 'First example page',
-        'contenido': 'You can add your content here...',
+        'title': 'Template 1',
+        'description': 'First example page',
+        'content': 'You can add your content here...',
     }
     return render(request, 'template1.html', context)
 
 def template2(request):
     """Template 2 view"""
     context = {
-        'titulo': 'Template 2',
-        'descripcion': 'Second example page',
-        'contenido': 'You can add your content here...',
+        'title': 'Template 2',
+        'description': 'Second example page',
+        'content': 'You can add your content here...',
     }
     return render(request, 'template2.html', context)
 
 def template3(request):
     """Template 3 view"""
     context = {
-        'titulo': 'Template 3',
-        'descripcion': 'Third example page',
-        'contenido': 'You can add your content here...',
+        'title': 'Template 3',
+        'description': 'Third example page',
+        'content': 'You can add your content here...',
     }
     return render(request, 'template3.html', context)
 
 def template4(request):
     """Template 4 view"""
     context = {
-        'titulo': 'Template 4',
-        'descripcion': 'Fourth example page',
-        'contenido': 'You can add your content here...',
+        'title': 'Template 4',
+        'description': 'Fourth example page',
+        'content': 'You can add your content here...',
     }
     return render(request, 'template4.html', context)
 ```
@@ -885,9 +889,9 @@ Each function:
 - ✅ Returns the rendered HTML with `render()`
 
 **In HTML you'll access the data with:**
-- `{{ titulo }}`
-- `{{ descripcion }}`
-- `{{ contenido }}`
+- `{{ title }}`
+- `{{ description }}`
+- `{{ content }}`
 
 ### 🎯 What is `context`?
 
@@ -896,8 +900,8 @@ It's the "bridge" between Python (backend) and HTML (frontend):
 ```
 Python (views.py)           HTML (templates)
 context = {
-    'titulo': '...'    →    {{ titulo }}
-    'mensaje': '...'   →    {{ mensaje }}
+    'title': '...'    →    {{ title }}
+    'message': '...'   →    {{ message }}
 }
 ```
 
@@ -1471,8 +1475,8 @@ In VS Code:
 
 {% block content %}
     <section class="welcome">
-        <h2>{{ titulo }}</h2>
-        <p class="lead">{{ mensaje }}</p>
+        <h2>{{ title }}</h2>
+        <p class="lead">{{ message }}</p>
         
         <div class="info-box">
             <h3>What is this?</h3>
@@ -1500,7 +1504,7 @@ In VS Code:
 
 ### 📚 Explanation:
 - `{% extends "base.html" %}` → "Inherits the structure from base.html" (including header and footer)
-- `{{ titulo }}` and `{{ mensaje }}` → Variables coming from `views.py`
+- `{{ title }}` and `{{ message }}` → Variables coming from `views.py`
 - Only edit the content inside `{% block content %}...{% endblock %}`
 - Header and footer are added automatically
 
@@ -1532,14 +1536,14 @@ When Django renders home.html:
 
 ```html
 {% extends "base.html" %}
-{% block title %}{{ titulo }} - My Website{% endblock %}
+{% block title %}{{ title }} - My Website{% endblock %}
 {% block content %}
     <section class="welcome">
-        <h2>{{ titulo }}</h2>
-        <p class="lead">{{ descripcion }}</p>
+        <h2>{{ title }}</h2>
+        <p class="lead">{{ description }}</p>
         <div class="info-box">
             <h3>📄 Content</h3>
-            <p>{{ contenido }}</p>
+            <p>{{ content }}</p>
         </div>
         <div class="info-box">
             <h3>💡 What can you do here?</h3>
@@ -1580,7 +1584,7 @@ But we saved them here:
 web/templates/home.html  ← Where we have them
 ```
 
-**Without this, you'll see: `TemplateDoesNotExist` ❌**
+**Without this, you'll see: `TemplateDoesNotExist` **
 
 ### ▶️ Edit `proyectoDjango/settings.py`
 
@@ -1614,8 +1618,409 @@ docker run -p 8000:8000 -v "$(pwd):/usr/src/app" -w /usr/src/app image_project:v
 
 **Open your browser and go to:** `http://localhost:8000`
 
-✅ **¡Your website is live!**
+---
+
+## PHASE 3 OF 3: Docker-Compose for Complete Professional Systems
+
+# 🐳 PHASE 3 OF 3: Docker-Compose for Complete Professional Systems
+
+## Why is PHASE 3 the Most Important Change?
+
+### The Problem (PHASE 1-2):
+- ❌ Only one container
+- ❌ Impossible to add databases, cache, etc.
+- ❌ Difficult to take to production
+
+### The Solution (PHASE 3 - Docker-Compose):
+- ✅ One simple command: `docker-compose up`
+- ✅ **MULTIPLE integrated containers**
+- ✅ **Automatic network between services**
+- ✅ Easy scalability
+- ✅ **READY for professional production**
 
 ---
 
-Made with ❤️ by [Juliam Guerrero Diaz](https://github.com/JULIAMGUERRERO)
+## 🏗️ Professional Architecture: From Monolithic to Integrated System
+
+### BEFORE (PHASE 1-2) - Only one container:
+```
+┌─────────────────────────────────────┐
+│     Your PC - Local Development     │
+│ ┌─────────────────────────────────┐ │
+│ │   Django App (Container)        │ │
+│ │   Port 8000:8000                │ │
+│ │                                 │ |
+│ │   Database on PC (SQLite)       | |
+│ │   Danger: Data Loss             │ │
+│ │                                 │ │
+│ │   No cache (Redis)              │ │
+│ └─────────────────────────────────┘ │
+└─────────────────────────────────────┘
+```
+
+### AFTER (PHASE 3) - Professional Integrated System:
+```
+┌────────────────────────────────────────────────────────┐
+│       Docker-Compose Network (Automatic Network)       │
+│                                                        │
+│  ┌────────────┐   ┌─────────────┐   ┌──────────┐       │
+│  │  Django    │◄─►│ PostgreSQL  │   │  Redis   │       │
+│  │    App     │   │   Database  │   │  Cache   │       │
+│  │ :8000      │   │   :5432     │   │  :6379   │       │
+│  └────────────┘   └─────────────┘   └──────────┘       │
+│        ▲                  ▲                ▲           │
+│        └──────────────────┼────────────────┘           │
+│                 Automatic DNS Network                  │
+│                                                        │
+│                                                        │
+│  Each service can scale, restart, update itself       │
+│  without affecting others. Everything synchronized.    │
+└────────────────────────────────────────────────────────┘
+```
+
+---
+
+**Everything works integrated automatically.**
+
+### Smart Networks Between Containers
+Containers communicate with each other automatically:
+- Django accesses PostgreSQL: `postgresql://db:5432/...`
+- Django accesses Redis: `redis://cache:6379/...`
+- Nginx talks with Django: `http://web:8000`
+
+**No IP configuration, no complications. Pure Docker magic.**
+
+### Development = Production
+What you see on your PC is exactly what runs on the server:
+```
+Local (docker-compose up) 
+    ↓
+Testing  
+    ↓
+Production (docker-compose.prod up)
+
+Same config = Same results = No surprises
+```
+
+### Enormously Facilitates Production
+- ✅ Works the same on AWS, DigitalOcean, dedicated server
+- ✅ Databases, cache, queues, everything integrated
+- ✅ Centralized and monitored logs
+- ✅ Automatic backups
+- ✅ Easy SSL/HTTPS
+
+
+
+---
+
+## STEP 1: Create the `docker-compose.yml` file
+
+In your `project/` folder, create a new file called `docker-compose.yml` (at the same level as the Dockerfile).
+
+### Option A: Create file via Terminal (recommended)
+
+**Windows (PowerShell):**
+```powershell
+@'
+version: '3.8'
+
+services:
+  web:
+    build: .
+    image: image_project:v1.0
+    container_name: container_project
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+'@ | Set-Content docker-compose.yml
+```
+
+**macOS / Linux (Bash):**
+```bash
+cat > docker-compose.yml << 'EOF'
+version: '3.8'
+
+services:
+  web:
+    build: .
+    image: image_project:v1.0
+    container_name: container_project
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+EOF
+```
+
+### Option B: Create manually
+
+1. Open VS Code in your `project/` folder
+2. Right-click in explorer → **"New File"**
+3. Name it: `docker-compose.yml`
+4. Copy the content from the next block into the file
+
+### ▶️ File Content
+
+If you used **Option A (Terminal)**, you're done! ✅  
+If you used **Option B (VS Code)**, copy this exact content:
+
+```yaml
+version: '3.8'
+
+services:
+  web:
+    build: .
+    image: image_project:v1.0
+    container_name: container_project
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+```
+
+### Line by Line - YAML Explained:
+
+| Line | What it means | Why it matters | Scalability |
+|------|--------------|-----------------|-------------|
+| `version: '3.8'` | Docker-compose version | Compatible with modern Docker | Supports all features you'll need |
+| `services:` | DEFINE ALL YOUR CONTAINERS HERE | Growth point: today the web app, in future (another app, db, cache, nginx, backup) | You can have unlimited services running together |
+| `web:` | Name of Django service | Unique identifier. Later: `db:`, `cache:`, etc. | Each service scales, restarts independently |
+| `build: .` | Builds from Dockerfile in this folder | Uses existing Dockerfile you created | You can have multiple Dockerfiles for different services |
+| `image: image_project:v1.0` | Image name with version | Identifies exact generated image | Facilitates versioning and reuse |
+| `container_name: container_project` | Container name | Reusable, easy to identify with `docker ps` | Easy debugging and monitoring - same name in all commands |
+| `command:` | Command to execute on startup | Starts Django automatically | Each service runs its own command |
+| `volumes:` | Syncs folders PC ↔ container | Code changes visible instantly (hot-reload) | Data persists when container restarts |
+| `- .:/usr/src/app` | Your PC ↔ /usr/src/app in container | Files synchronized in real time | Same pattern for DB: PostgreSQL saves data in volume |
+| `ports:` | Port mapping | App access from browser | Django:8000, Nginx:80, PostgreSQL:5432, Redis:6379 |
+| `- "8000:8000"` | Port 8000 local ↔ Port 8000 container | `localhost:8000` will open the app | Each service has its own ports |
+| `environment:` | Environment variables | Configurations, credentials, connections | DATABASE_URL, REDIS_URL, secret keys (next) |
+| `PYTHONUNBUFFERED=1` | Logs in real time without buffer | See errors immediately in terminal | Critical for debugging in production |
+| `PYTHONDONTWRITEBYTECODE=1` | Doesn't create `.pyc` files | Less clutter + smaller volume | Improves sync performance |
+
+✅ **Result:** Every time you run `docker-compose up`, it uses the SAME image and SAME container (reusability, fewer resources)
+
+---
+
+## STEP 2: Start Your Application with Docker-Compose
+
+### First time: Run `docker-compose up`
+
+Open Terminal in your `project/` folder (where the `docker-compose.yml` is) and run:
+
+**Windows (PowerShell):**
+```powershell
+docker-compose up
+```
+
+**macOS / Linux (Bash):**
+```bash
+docker-compose up
+```
+
+### What Happens Automatically?
+
+```
+1️⃣ Docker checks if image exists: image_project:v1.0
+                    ↓
+2️⃣ If NOT → Automatically runs: docker build
+                    ↓
+3️⃣ Creates container: container_project
+                    ↓
+4️⃣ Starts Django at http://localhost:8000
+                    ↓
+5️⃣ See logs live in your terminal
+```
+
+### ✅ Expected Result:
+
+In your terminal you'll see something like:
+```
+[+] Running 1/1
+ ✔ Container container_project  Created
+Attaching to container_project
+container_project  | Watching for file changes with StatReloader
+container_project  | Starting development server at http://0.0.0.0:8000/
+container_project  | Quit the server with CONTROL-C.
+```
+
+### 🌐 Open Your Browser:
+
+Go to: **http://localhost:8000/**
+
+You should see your website working! 
+
+### ⏹️ To Stop:
+
+Press in terminal: **`Ctrl + C`**
+
+---
+
+## Useful `docker-compose up` Commands
+
+After the first time, each time you want to start your app:
+
+**Option A: In foreground (see logs in terminal)**
+```bash
+docker-compose up
+```
+
+**Option B: In background (free up terminal)**
+```bash
+docker-compose up -d
+```
+
+Then, to see logs anytime:
+```bash
+docker-compose logs -f web
+```
+
+### When Do You Need to Rebuild?
+
+Use `docker-compose build` ONLY if:
+- ✅ You change `requirements.txt` (new Python packages)
+- ✅ You change `Dockerfile` (new configuration)
+- ✅ You want to force rebuild (clear cache)
+
+### You DON'T Need to Rebuild if:
+- ❌ You change Python files (views.py, models.py, etc.)
+- ❌ You change HTML templates
+- ❌ You change CSS or JavaScript
+- ❌ You change static files
+
+### Command to Rebuild:
+
+```bash
+docker-compose build
+```
+
+Then start again:
+```bash
+docker-compose up
+```
+
+Or in one command:
+```bash
+docker-compose up --build
+```
+
+---
+
+### Most Common Commands:
+
+| Command | What it does | Example |
+|---------|-------------|---------|
+| `docker-compose up` | Start all services (view logs) | `docker-compose up` |
+| `docker-compose up -d` | Start in background (no logs) | `docker-compose up -d` |
+| `docker-compose down` | Stop and remove containers | `docker-compose down` |
+| `docker-compose logs -f web` | View logs in real time | `docker-compose logs -f web` |
+| `docker-compose build` | Rebuild image | `docker-compose build` |
+| `docker-compose exec web bash` | Access container terminal | `docker-compose exec web bash` |
+| `docker-compose ps` | View service status | `docker-compose ps` |
+| `docker-compose restart` | Restart all services | `docker-compose restart` |
+
+---
+
+## ✨ What You Learned in PHASE 3
+
+### Key Concepts:
+✅ Docker-Compose is the professional standard for Django  
+✅ ONE YAML file defines EVERYTHING in your system  
+✅ Multiple services communicate automatically  
+✅ Volumes enable fast development (hot-reload)  
+✅ Same file for development, testing, and production  
+✅ Scalable from simple to complex  
+
+### Skills Acquired:
+✅ Create and understand `docker-compose.yml`  
+✅ Run multiple coordinated containers  
+✅ Use Docker automatic networks  
+✅ Data persistence with volumes  
+✅ Environment variables for configuration  
+✅ Preparation for production  
+
+---
+
+## 🚀 Next Steps:
+
+### Intermediate Level (With Docker-Compose):
+- ✅ Add PostgreSQL as database 
+- ✅ Add Redis for cache and sessions
+- ✅ Configure Nginx as reverse proxy
+- ✅ Add automatic SSL/HTTPS
+- ✅ Automatic backup system
+
+### Advanced Level (Complete Application):
+- ✅ Add contact forms
+- ✅ User system and authentication
+- ✅ Professional admin dashboard
+- ✅ REST API with Django REST Framework
+- ✅ Email notification system
+
+### Production (Professional Scale):
+- ✅ Switch to gunicorn (professional server, not dev)
+- ✅ `.env` file for secret credentials
+- ✅ CI/CD with GitHub Actions
+- ✅ Automatic error monitoring
+- ✅ Daily automatic backups
+- ✅ Deploy to AWS, DigitalOcean, Heroku, Azure
+- ✅ Automatic SSL certificates with Let's Encrypt
+
+---
+
+## Complete Glossary - Key Terms
+
+## 📚 Complete Glossary - Key Terms 
+
+| Term | Meaning | In Your Project |
+|------|---------|-----------------|
+| **HTML** | Language to create web page structures | templates/base.html |
+| **CSS** | Language to make pages look beautiful | static/css/style.css |
+| **JavaScript** | Language to make pages interactive | static/js/menu.js |
+| **Django** | Python framework (tool) for creating professional websites | proyectoDjango/ |
+| **Docker** | Container - packages your application to run on any PC | Dockerfile |
+| **Image** | Docker template/recipe (like an .ISO) | `image_project:v1.0` |
+| **Container** | Instance running the image (like an active virtual machine) | `container_project` |
+| **Tag/Label** | Version or variant of an image | `v1.0` in `image_project:v1.0` |
+| **Dockerfile** | File that defines how to build the image | PHASE 1, STEP 3 |
+| **Docker-Compose** | Tool for defining and running multiple containers with YAML file | docker-compose.yml |
+| **YAML** | Human-readable file format (uses spaces and colons, not brackets) | docker-compose.yml |
+| **Build** | Compile Dockerfile to create an image | `docker build` / `docker-compose build` |
+| **Service** | Individual service in docker-compose (in your case: "web") | services: web: |
+| **Template** | HTML file that Django fills with data (dynamic) | templates/home.html |
+| **View** | Python function that processes data and returns a template | web/views.py |
+| **URL** | Web address (http://localhost:8000/) | web/urls.py |
+| **Navbar** | Navigation bar (menu) | templates/header.html |
+| **Responsive** | Adapts to mobile, tablets, desktops | CSS with media queries |
+| **Hot-Reload** | Code changes visible automatically without restart | Volume + PYTHONUNBUFFERED=1 |
+| **Volume** | Folder sync between PC and Docker container | `.:/usr/src/app` in docker-compose.yml |
+| **Port Mapping** | Connection PC port ↔ container port | `-p 8000:8000` |
+| **Environment Variables** | Configurations passed to container | `PYTHONUNBUFFERED=1` |
+| **Versioning** | Version control of the image | `v1.0`, `v2.0`, etc. |
+
+---
+
+## 🎓 Want to Learn More?
+
+- [Django Official](https://www.djangoproject.com/)
+- [MDN Web Docs (HTML/CSS/JS)](https://developer.mozilla.org/)
+- [Docker Official](https://www.docker.com/)
+
+---
+
+## 🎉 Congratulations! Your Complete Guide is Ready
+
+You now have a complete Django + Docker professional website. From basic setup to production-ready architecture with Docker-Compose. Keep learning and building!
+

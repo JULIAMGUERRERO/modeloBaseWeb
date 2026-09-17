@@ -1580,7 +1580,7 @@ Pero nosotros los guardamos aquí:
 web/templates/home.html  ← Donde los tenemos
 ```
 
-**Sin esto, verás: `TemplateDoesNotExist` ❌**
+**Sin esto, verás: `TemplateDoesNotExist` **
 
 ### ▶️ Edita `proyectoDjango/settings.py`
 
@@ -1611,72 +1611,9 @@ docker run -p 8000:8000 -v "${PWD}:/usr/src/app" -w /usr/src/app imagen_proyecto
 ```bash
 docker run -p 8000:8000 -v "$(pwd):/usr/src/app" -w /usr/src/app imagen_proyecto:v1.0 python manage.py runserver 0.0.0.0:8000
 ```
-
-### 🌐 Abre tu navegador:
-
-1. Ve a: **http://localhost:8000/**
-2. ¡**DEBERÍAS VER TU PÁGINA WEB CON TODO!**
-
-Verás:
-- ✅ Header morado con título y menú
-- ✅ Contenido de la página home
-- ✅ Footer oscuro
-- ✅ Menú hamburguesa en móvil (prueba haciendo la ventana más pequeña)
-- ✅ Todos los links funcionando (home, plantilla1, plantilla2, plantilla3, plantilla4)
-
-### Prueba el menú hamburguesa:
-
-1. Redimensiona tu navegador (hazlo más estrecho)
-2. El menú debería cambiar a ☰
-3. Click en ☰ → Se abre el menú
-4. Click en otro link → Se cierra automáticamente
-
-### Prueba todos los links:
-
-Haz click en cada link del menú:
-- Home → Lleva a la página principal
-- Plantilla 1 → Primera página adicional
-- Plantilla 2 → Segunda página adicional
-- Plantilla 3 → Tercera página adicional
-- Plantilla 4 → Cuarta página adicional
-
-**¡Felicidades! ¡Tu sitio web está completamente funcional!** 🎉
-
 ---
 
-## ✅ ¡Tu sitio web está COMPLETO!
-
-### 🎯 Resumen de lo que creaste:
-
-| Archivo | Qué hace |
-|---------|----------|
-| `header.html` | Menú + título |
-| `footer.html` | Pie de página |
-| `base.html` | Estructura principal |
-| `home.html` | Página de inicio |
-| `plantilla1-4.html` | 4 páginas más |
-| `style.css` | Estilos bonitos + responsive |
-| `menu.js` | Hamburguesa interactiva |
-| `views.py` | Lógica de cada página |
-| `urls.py` | URLs de cada página |
-
-### 🌐 Para ver tu sitio:
-
-Abre Terminal en tu carpeta `proyecto/` y ejecuta según tu SO:
-
-**Windows (PowerShell):**
-```powershell
-docker run -p 8000:8000 -v "${PWD}:/usr/src/app" -w /usr/src/app imagen_proyecto:v1.0 python manage.py runserver 0.0.0.0:8000
-```
-
-**macOS / Linux (Bash):**
-```bash
-docker run -p 8000:8000 -v "$(pwd):/usr/src/app" -w /usr/src/app imagen_proyecto:v1.0 python manage.py runserver 0.0.0.0:8000
-```
-
 Luego ve a: **http://localhost:8000/**
-
-
 
 ---
 
@@ -1767,7 +1704,6 @@ Same config = Same results = Sin sorpresas
 - ✅ Backups automáticos
 - ✅ SSL/HTTPS fácil
 
-**Sin Docker-Compose, la producción es un caos. Con él, es sencillo.**
 
 ---
 
@@ -1917,7 +1853,7 @@ contenedor_proyecto  | Quit the server with CONTROL-C.
 
 Ve a: **http://localhost:8000/**
 
-¡Deberías ver tu sitio web funcionando! 🎉
+¡Deberías ver tu sitio web funcionando!
 
 ### ⏹️ Para detener:
 
@@ -1925,7 +1861,7 @@ Presiona en la terminal: **`Ctrl + C`**
 
 ---
 
-## PASO 3: Siguientes veces - Usar `docker-compose up`
+## Comandos utiles de `docker-compose up`
 
 Después de la primera vez, cada vez que quieras iniciar tu app:
 
@@ -1943,10 +1879,6 @@ Luego, para ver los logs en cualquier momento:
 ```bash
 docker-compose logs -f web
 ```
-
----
-
-## PASO 4: Reconstruir imagen - Cuándo usar `docker-compose build`
 
 ### ¿Cuándo necesitas reconstruir?
 
@@ -1978,8 +1910,6 @@ docker-compose up --build
 ```
 
 ---
-
-## 📌 PASO 5: Comandos útiles de Docker-Compose
 
 ### Los comandos más comunes:
 
@@ -2041,16 +1971,6 @@ docker-compose up --build
 - ✅ Desplegar a AWS, DigitalOcean, Heroku, Azure
 - ✅ Certificados SSL automáticos con Let's Encrypt
 
----
-**¡Felicidades! 🎉 Completaste FASE 1 + FASE 2 + FASE 3. Ahora eres capaz de:**
-- Crear un Django app desde cero
-- Diseñar sitios web profesionales (HTML/CSS/JavaScript)
-- Containerizar con Docker
-- Bases teorica para orquestar sistemas con Docker-Compose, ideal para produccion.
-
-**¡Estás listo para cualquier desafío web!** 🚀
-
----
 ---
 ## 📚 Glosario Completo - Términos Clave 
 
