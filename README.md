@@ -170,7 +170,7 @@ main (ESTÁS AQUÍ)
 
 ¿Tienes mejoras o sugerencias?
 
-- 🐛 **Reportar bugs** — [Issues](https://github.com/JULIAMGUERRERO/modeloBaseWeb/issues)
+- 🐛 **Reportar bugs** — [Issues](https://github.com/evidadeusto/modeloBaseWeb/issues)
 - 🔀 **Hacer pull requests** — Tus contribuciones son bienvenidas
 
 ---
@@ -363,7 +363,7 @@ main (YOU ARE HERE)
 
 Do you have improvements or suggestions?
 
-- 🐛 **Report bugs** — [Issues](https://github.com/JULIAMGUERRERO/modeloBaseWeb/issues)
+- 🐛 **Report bugs** — [Issues](https://github.com/evidadeusto/modeloBaseWeb/issues)
 - 🔀 **Make pull requests** — Your contributions are welcome
 
 ---
