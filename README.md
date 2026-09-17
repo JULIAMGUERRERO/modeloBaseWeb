@@ -293,7 +293,7 @@ Do you have improvements or suggestions for the template?
 
 **I invite you to collaborate!**
 
-- 🐛 **Report bugs** — [Issues](https://github.com/JULIAMGUERRERO/modeloBaseWeb/issues)
+- 🐛 **Report bugs** — [Issues](https://github.com/evidadeusto/modeloBaseWeb/issues)
 - 🔀 **Make pull requests** — Your contributions are welcome
 
 ---
