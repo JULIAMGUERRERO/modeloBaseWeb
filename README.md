@@ -293,7 +293,7 @@ Una vez tengas el proyecto corriendo:
 
 **¡Te invito a colaborar!**
 
-- 🐛 **Reportar bugs** — [Issues](https://github.com/JULIAMGUERRERO/modeloBaseWeb/issues)
+- 🐛 **Reportar bugs** — [Issues](https://github.com/evidadeusto/modeloBaseWeb/issues)
 - 🔀 **Hacer pull requests** — Tus contribuciones son bienvenidas
 
 ---
