@@ -302,8 +302,6 @@ Do you have improvements or suggestions for the template?
 
 This project is distributed under the **MIT** license. You are free to use, modify, and distribute the code, as long as you maintain the mention of the original license.
 
-Check [LICENSE](./LICENSE) for more details.
-
 ---
 
 
